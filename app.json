@@ -12,7 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#070D09"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.orqestrax.app",
@@ -29,7 +31,10 @@
       },
       "package": "com.orqestrax.app",
       "versionCode": 1,
-      "permissions": ["ACCESS_FINE_LOCATION", "CAMERA"]
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -46,8 +51,9 @@
     "extra": {
       "apiUrl": "https://api.orqestrax.com",
       "eas": {
-        "projectId": "orqestra-mobile"
+        "projectId": "e1d56011-1dda-4b3c-80a1-12b2249503f7"
       }
-    }
+    },
+    "owner": "orqestrax"
   }
 }
