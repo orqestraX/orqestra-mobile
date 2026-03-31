@@ -4,12 +4,12 @@ import { useAuthStore } from '@/src/store/authStore';
 import { router } from 'expo-router';
 
 const menuItems = [
-  { icon: '🏢', label: 'Business Profile', sub: 'License, contact, details' },
-  { icon: '🔔', label: 'Notifications', sub: 'Order alerts, updates' },
-  { icon: '🔒', label: 'Security', sub: 'Password, 2FA' },
-  { icon: '📄', label: 'Compliance Documents', sub: 'Licenses & permits' },
-  { icon: '💳', label: 'Billing', sub: 'Subscription & invoices' },
-  { icon: '❓', label: 'Help & Support', sub: 'Contact Orqestra' },
+  { icon: '🏢', label: 'Business Profile', sub: 'License, contact, details', route: null },
+  { icon: '🔔', label: 'Notifications', sub: 'Order alerts, updates', route: '/notifications' },
+  { icon: '🔒', label: 'Security', sub: 'Password, 2FA', route: null },
+  { icon: '📄', label: 'Compliance Documents', sub: 'Licenses & permits', route: null },
+  { icon: '💳', label: 'Billing', sub: 'Subscription & invoices', route: null },
+  { icon: '❓', label: 'Help & Support', sub: 'Chat with Orq AI · 24/7', route: '/help' },
 ];
 
 export default function ProfileScreen() {
@@ -51,6 +51,7 @@ export default function ProfileScreen() {
           {menuItems.map((item, idx) => (
             <TouchableOpacity
               key={item.label}
+              onPress={() => item.route && router.push(item.route as never)}
               className={`flex-row items-center py-4 ${idx < menuItems.length - 1 ? 'border-b border-[#1E3A23]' : ''}`}
               activeOpacity={0.6}
             >
