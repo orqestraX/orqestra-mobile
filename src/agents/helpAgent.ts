@@ -90,8 +90,8 @@ const INTENTS: Intent[] = [
   // Pricing / fees
   {
     keywords: ['how much', 'fee', 'cost', 'pricing', 'subscription', 'plan', 'free', 'charge'],
-    response: "Orqestra pricing:\n\n• Starter — Free · Browse + receive orders\n• Professional — $299/mo · Full marketplace access\n• Enterprise — Custom · Multi-location operators\n\nAll plans include a 2.5% transaction fee. No setup fees. Upgrade anytime from Profile → Billing.",
-    quickReplies: ['Compare plans', 'Upgrade my plan', 'Is there a free trial'],
+    response: "Orqestra pricing is simple and flat:\n\n• $34.99/month — All operators (cultivators, manufacturers, dispensaries, couriers)\n• Unlimited listings\n• 3% transaction fee on completed orders\n• No setup fees. No hidden costs.\n\nOptional: Add promo boosts for featured placement in the marketplace.",
+    quickReplies: ['Get early access', 'What is the 3% fee on?', 'How do promo boosts work?'],
   },
 
   // Dispute / issue with vendor
